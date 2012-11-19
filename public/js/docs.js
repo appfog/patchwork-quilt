@@ -22,6 +22,15 @@ function params(){
     return vars;
 }
 
+var prettyprintRegexArr = [
+    /<pre>(<code>\$\s[\s\S]+?<\/code><\/pre>)/g, 
+    /<pre>(<code>.*?\n+.*?\n+.*?\n+[\s\S]*?<\/code><\/pre>)/gm
+];
+
 $(document).ready(function() {
     $('li.active').parents('li').prev().find('a.menu-parent').trigger('click');
+    //$('pre > code').parent().addClass('prettyprint');
+    $('pre > code').filter(function(index){
+        var match = regex.exec(this);
+    });
 });
