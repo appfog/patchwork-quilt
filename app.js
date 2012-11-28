@@ -17,7 +17,12 @@ if(process.env.VCAP_SERVICES){
 }
 
 app.get('/img/*', function(req, res){
-    res.redirect(301, conf.assets + req.url);
+    console.log(req.url);
+    res.redirect(301, conf.cloudfront + '/assets' + req.url);
+});
+
+app.get('/static/*', function(req, res){
+    res.redirect(301, conf.cloudfront + '/assets' + req.url.replace('static','public'));
 });
 
 app.get('/search', routes.search);

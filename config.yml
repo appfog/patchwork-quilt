@@ -3,3 +3,4 @@ github:
   repo: afdocs
 assets: https://s3.amazonaws.com/afdocs/assets
 searchify: https://7ykj.api.searchify.com
+cloudfront: https://d139e3nckwoppi.cloudfront.net
