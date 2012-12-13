@@ -2,5 +2,5 @@ github:
   user: appfog
   repo: afdocs
 assets: https://s3.amazonaws.com/afdocs/assets
-searchify: https://7ykj.api.searchify.com
+searchify: http://88n2f.api.searchify.com
 cloudfront: https://d139e3nckwoppi.cloudfront.net
