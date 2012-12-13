@@ -4,6 +4,7 @@
     "dependencies": {
         "async": "",
         "express": "",
+        "jade": "",
         "js-yaml": "",
         "mongoose": ""
     }
